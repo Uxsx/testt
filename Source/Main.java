@@ -17,6 +17,8 @@ class Main {
             String operation = scanner.next();
 
             if (operation.equals("=")) {
+                System.out.println("-------------------------");
+                System.out.println("Result: " + cal.getResult());
                 break;
             }
 
@@ -29,9 +31,6 @@ class Main {
             System.out.println("Current Result: " + cal.getResult());
         }
 
-        System.out.println("-------------------------");
-        System.out.println("Result: " + cal.getResult());
-        
         scanner.close();
     }
 }
