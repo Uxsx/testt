@@ -18,7 +18,7 @@ class Main {
 
             if (operation.equals("=")) {
                 System.out.println("-------------------------");
-                System.out.println("Result: " + cal.getResult());
+                System.out.println("Final Result: " + cal.getResult());
                 break;
             }
 
