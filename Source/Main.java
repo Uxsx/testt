@@ -24,9 +24,9 @@ class Main {
             double nextNumber = scanner.nextDouble();
 
             cal.applyOperation(operation, nextNumber);
-            
-            System.out.println("Current Result: " + cal.getResult());
+
             new Display();
+            System.out.println("Current Result: " + cal.getResult());
         }
 
         System.out.println("-------------------------");
