@@ -7,29 +7,30 @@ class Main {
         System.out.println("Welcome to the Calculator Program!");
         new Display();
 
-        System.out.print("ป้อนตัวเลขเริ่มต้น: ");
+        System.out.print("Input Number: ");
         double initialNumber = scanner.nextDouble();
         
         Calculator cal = new Calculator(initialNumber);
 
         while (true) {
-            System.out.print("ป้อนเครื่องหมาย: ");
+            System.out.print("Input Operators: ");
             String operation = scanner.next();
 
             if (operation.equals("=")) {
                 break;
             }
 
-            System.out.print("ป้อนตัวเลขถัดไป: ");
+            System.out.print("Input Next Number: ");
             double nextNumber = scanner.nextDouble();
 
             cal.applyOperation(operation, nextNumber);
             
-            System.out.println("ผลลัพธ์ปัจจุบัน: " + cal.getResult());
+            System.out.println("Current Result: " + cal.getResult());
+            new Display();
         }
 
         System.out.println("-------------------------");
-        System.out.println("คำตอบสุดท้ายคือ: " + cal.getResult());
+        System.out.println("Result: " + cal.getResult());
         
         scanner.close();
     }
