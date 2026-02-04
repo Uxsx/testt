@@ -4,6 +4,8 @@ class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        new Display();
+
         System.out.print("ป้อนตัวเลขเริ่มต้น: ");
         double initialNumber = scanner.nextDouble();
         
